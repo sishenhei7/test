@@ -8,3 +8,5 @@ https://www.webpagefx.com/tools/emoji-cheat-sheet/
 - [x] Finish my changes
 - [ ] Push my commits to GitHub
 - [ ] Open a pull request
+
+:closed_umbrella:
