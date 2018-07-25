@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>canvas视频</title>
+    <style>
+        body{margin:0;padding:0;}
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="600" height="400"></canvas>
+    <video id="video" muted src="http://www.w3school.com.cn/example/html5/mov_bbb.mp4" width="600px" height="400px" controls="control" loop="loop" style="display:none;"></video>
+    <script>
+        var vw = 600, vh = 400;
+        var video = document.getElementById("video");
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext('2d');
+        function animate(){
+            ctx.drawImage(video , 0 , 0 , vw , vh);
+            if("requestAnimationFrame" in window){
+                requestAnimationFrame(animate);
+            }
+            else if("webkitRequestAnimationFrame" in window){
+                webkitRequestAnimationFrame(animate);
+            }
+            else if("msRequestAnimationFrame" in window){
+                msRequestAnimationFrame(animate);
+            }
+            else if("mozRequestAnimationFrame" in window){
+                mozRequestAnimationFrame(animate);
+            }
+        }
+
+        video.play();
+        window.onclick = function() {
+            video.muted=false;
+        }
+        // video.play();
+        animate();
+    </script>
+</body>
+</html>
