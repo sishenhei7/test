@@ -8,8 +8,14 @@
     </style>
 </head>
 <body>
-    <canvas id="canvas" width="600" height="400"></canvas>
-    <video id="video" muted src="http://www.w3school.com.cn/example/html5/mov_bbb.mp4" width="600px" height="400px" controls="control" loop="loop" style="display:none;"></video>
+    <canvas id="canvas" width="600" height="400">
+        你的浏览器不支持canvas！！！
+    </canvas>
+    <video id="video" muted width="600px" height="400px" loop="loop" style="display:none;">
+        <source src="http://www.w3school.com.cn/example/html5/mov_bbb.mp4" type="video/mp4">
+        <source src="http://www.w3school.com.cn/example/html5/mov_bbb.ogg" type="video/ogg">
+        <source src="http://www.w3school.com.cn/example/html5/mov_bbb.webm" type="video/webm">
+    </video>
     <script>
         var vw = 600, vh = 400;
         var video = document.getElementById("video");
