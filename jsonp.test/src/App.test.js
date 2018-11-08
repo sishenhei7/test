@@ -50,6 +50,6 @@ describe('test-jsonp', () => {
             done();
         }
 
-        jsonp(host + url, opts, callback);
+        jsonp('//dora.webcgi.163.com/api/213_792_2018_09_14/active_check', opts, callback);
     })
 });
