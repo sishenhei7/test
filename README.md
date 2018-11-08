@@ -1,12 +1,9 @@
 # test
 测试用的仓库  repository for test
 
-https://www.webpagefx.com/tools/emoji-cheat-sheet/
+:necktie::closed_umbrella:
 
-:necktie:
+- [x] [emoji](./emoji)
+- [x] [canvas-video](./canvas-video)
 
-- [x] Finish my changes
-- [ ] Push my commits to GitHub
-- [ ] Open a pull request
 
-:closed_umbrella:
