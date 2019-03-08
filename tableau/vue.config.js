@@ -10,7 +10,7 @@ module.exports = {
         target: tableauApi,
         changeOrigin: true,
         pathRewrite: {
-          '^/tableau': ''
+          '/tableau': ''
         },
       },
     },
